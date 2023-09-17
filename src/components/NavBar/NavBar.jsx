@@ -31,7 +31,7 @@ const NavBar = () => {
             </div>
 
 
-            <ul className="md:flex items-center justify-center gap-8">
+            <ul className={`md:flex items-center justify-center gap-8 absolute ${open === true ? '' : 'hidden'}`}>
 
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
